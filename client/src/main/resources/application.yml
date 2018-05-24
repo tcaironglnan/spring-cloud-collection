@@ -15,7 +15,7 @@ eureka:
 
 logging:
   level:
-    root: ERROR
+    root: INFO
     org:
       springframework:
         web: ERROR

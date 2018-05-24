@@ -5,7 +5,6 @@ spring:
 server:
   port: 8764
 
-#开启Feign的熔断机制,pom的依赖不需要添加了,因为Feign已经自带
 feign:
   hystrix:
     enabled: true
