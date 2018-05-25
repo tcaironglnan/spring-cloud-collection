@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@EnableZipkinServ1er
+@EnableZipkinServer
 public class ZipkinApplication {
 
     public static void main(String[] args) {
