@@ -1,19 +1,27 @@
-package com.zipkin;
+package com.client;
 
-import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
+import brave.sampler.Sampler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
-import zipkin.server.internal.EnableZipkinServer;
 
 @SpringBootApplication
-@EnableZipkinServer
-public class ZipkinApplication {
+public class ZipkinClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZipkinApplication.class, args);
+        SpringApplication.run(ZipkinClientApplication.class, args);
+    }
+
+    @Bean
+    @LoadBalanced
+    RestTemplate restTemplate(){
+        return new RestTemplate();
+    }
+
+    @Bean
+    public Sampler defaultSampler() {
+        return Sampler.ALWAYS_SAMPLE;
     }
 }

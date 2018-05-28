@@ -27,6 +27,11 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-autoconfigure-ui</artifactId>
+        </dependency>
+
         <!--添加断路器的依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

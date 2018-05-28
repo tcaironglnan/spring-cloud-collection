@@ -22,6 +22,7 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>zipkin</module>
+        <module>zipkin-client</module>
     </modules>
 
     <properties>

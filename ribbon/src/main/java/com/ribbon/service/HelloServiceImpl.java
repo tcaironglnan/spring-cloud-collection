@@ -1,4 +1,4 @@
-package com.zipkin.service;
+package com.ribbon.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
  * @Created 2018-05-23 14:18
  **/
 @Service("helloService")
-public class ZipkinHelloServiceImpl implements ZipkinHelloService {
+public class HelloServiceImpl implements HelloService {
 
     @Autowired
     private RestTemplate restTemplate;
