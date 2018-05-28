@@ -1,6 +1,6 @@
-package com.ribbon.controller;
+package com.zipkin.controller;
 
-import com.ribbon.service.ZipkinHelloService;
+import com.zipkin.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
  **/
 @Controller
 @RequestMapping("/")
-public class ZipkinHelloController {
+public class HelloController {
 
     @Autowired
-    private ZipkinHelloService helloService;
+    private HelloService helloService;
 
     @RequestMapping("hi")
     @ResponseBody
