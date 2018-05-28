@@ -17,7 +17,7 @@ public class ClientController {
         return "Hello Eureka " + name;
     }
 
-    @Value("${client.port}")
+//    @Value("${client.port}")
     String port;
 
     @RequestMapping("/hi")

@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
  * @Created 2018-05-23 14:18
  **/
 @Service("helloService")
-public class HelloServiceImpl implements ZipkinHelloService {
+public class HelloServiceImpl implements HelloService {
 
     @Autowired
     private RestTemplate restTemplate;
