@@ -1,4 +1,4 @@
-package com.client;
+package com.zipkinclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class ZipkinClientApplication {
+public class ZipkinclientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZipkinClientApplication.class, args);
+        SpringApplication.run(ZipkinclientApplication.class, args);
     }
 
     @Bean

@@ -1,14 +1,15 @@
 spring:
   application:
-    name: service-zipkin-client
+    name: service-zipkin-client-two
   zipkin:
     base-url: http://127.0.0.1:8767
   sleuth:
-      sampler:
-        percentage: 1
+    sampler:
+      percentage: 1
+
 
 server:
-  port: 8768
+  port: 8769
 
 eureka:
   instance:
