@@ -7,7 +7,12 @@ Spring-Cloud的简单Demo
     #3. ribbon是服务消费者,可以认为是消费者,该实现方式是rest+ribbon.
     #4. feign是服务消费者,可以认为是消费者,该实现方式是Feign
     #5. zuul是路由模块
-    #6. server-config是配置服务模块
+    #6. config-server是配置服务模块
+    #7. config-client是获取配置服务数据的客户端
+    #8. zipkin是链路追踪的服务端
+    #9. zipkin-client是被追踪的客户端
+    #10. zipkinclient是被追踪的客户端
+    #11. 
     
  
 # 关于配置服务运行的和访问的问题:

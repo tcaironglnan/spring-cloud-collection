@@ -24,6 +24,7 @@
         <module>zipkin</module>
         <module>zipkin-client</module>
         <module>zipkinclient</module>
+        <module>bus-amqp</module>
     </modules>
 
     <properties>
