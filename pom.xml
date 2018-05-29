@@ -27,6 +27,9 @@
         <module>bus-amqp</module>
         <module>server-one</module>
         <module>client-one</module>
+        <module>service-client</module>
+        <module>service-lucy</module>
+        <module>service-turbine</module>
     </modules>
 
     <properties>

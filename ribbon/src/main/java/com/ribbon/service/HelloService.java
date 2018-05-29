@@ -1,4 +1,4 @@
-package com.zipkin.service;
+package com.ribbon.service;
 
 /**
  * @author FaceFeel
