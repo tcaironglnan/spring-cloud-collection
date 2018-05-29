@@ -14,6 +14,7 @@ Spring-Cloud的简单Demo
     #10. zipkinclient是被追踪的客户端
     #11. bus-amqp消息总线模块客户端
     #12. server-one集群服务器1
+    #13. client-one集群客户端1
     
  
 # 关于配置服务运行的和访问的问题:
