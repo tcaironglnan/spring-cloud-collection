@@ -12,7 +12,8 @@ Spring-Cloud的简单Demo
     #8. zipkin是链路追踪的服务端
     #9. zipkin-client是被追踪的客户端
     #10. zipkinclient是被追踪的客户端
-    #11. 
+    #11. bus-amqp消息总线模块客户端
+    #12. server-one集群服务器1
     
  
 # 关于配置服务运行的和访问的问题:
