@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Created 2018-05-23 10:52
  **/
 @RestController
-public class ClientController {
+public class TurbineClientController {
 
     @RequestMapping("/hello")
     public String hello(String name) {
