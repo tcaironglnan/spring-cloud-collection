@@ -21,4 +21,4 @@ logging:
       hibernate: ERROR
       mybatis: ERROR
   path: D:/temp/logs/zipkin.log
-#  file: ./logs/ribbon.log
+#  file: ./logs/zipkin.log
