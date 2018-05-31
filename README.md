@@ -2,19 +2,22 @@
 Spring-Cloud的简单Demo
 
 # 子项目说明:
-    #1. client是客户端,可以认为是子服务,用于提供服务.
-    #2. server是服务端,可以认为是注册中心.
-    #3. ribbon是服务消费者,可以认为是消费者,该实现方式是rest+ribbon.
-    #4. feign是服务消费者,可以认为是消费者,该实现方式是Feign
-    #5. zuul是路由模块
-    #6. config-server是配置服务模块
-    #7. config-client是获取配置服务数据的客户端
-    #8. zipkin是链路追踪的服务端
-    #9. zipkin-client是被追踪的客户端
-    #10. zipkinclient是被追踪的客户端
-    #11. bus-amqp消息总线模块客户端
-    #12. server-one集群服务器1
-    #13. client-one集群客户端1
+    #1. service-server-client是客户端,可以认为是子服务,用于提供服务.
+    #2. service-server是服务端,可以认为是注册中心.
+    #3. service-ribbon是服务消费者,可以认为是消费者,该实现方式是rest+ribbon.
+    #4. service-feign是服务消费者,可以认为是消费者,该实现方式是Feign
+    #5. service-zuul是路由模块
+    #6. service-config-server是配置服务模块
+    #7. service-config-client是获取配置服务数据的客户端
+    #8. service-zipkin是链路追踪的服务端
+    #9. service-zipkin-client是被追踪的客户端
+    #10. service-zipkinclient是被追踪的客户端
+    #11. service-bus-amqp消息总线模块客户端
+    #12. service-server-one集群服务器1
+    #13. service-client-one集群客户端1
+    #14. service-lucy是断路器聚合监控客户端
+    #15. service-turbine是断路器聚合监控服务端
+    #16. service-consul是服务注册模块
     
  
 # 关于配置服务运行的和访问的问题:
