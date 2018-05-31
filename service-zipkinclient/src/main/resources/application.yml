@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: service-zipkin-client-two
+  zipkin:
+    base-url: http://127.0.0.1:8767
+  sleuth:
+    sampler:
+      percentage: 1
+
+
+server:
+  port: 8769
+
+eureka:
+  instance:
+      prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+
+
+logging:
+  level:
+    root: ERROR
+    org:
+      springframework:
+        web: ERROR
+      hibernate: ERROR
+      mybatis: ERROR
+  path: D:/temp/logs/zipkin.log
+#  file: ./logs/ribbon.log
