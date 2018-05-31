@@ -1,0 +1,47 @@
+#spring.cloud.config.client.git.uri：配置git仓库地址
+#spring.cloud.config.client.git.searchPaths：配置仓库路径
+#spring.cloud.config.label：配置仓库的分支
+#spring.cloud.config.client.git.username：访问git仓库的用户名
+#spring.cloud.config.client.git.password：访问git仓库的用户密码
+#如果是公开的项目,则不需要添加访问仓库的帐号和密码
+
+spring:
+  application:
+    name: config-server
+#  profiles:
+#      active: native #设置为本地启动的方式，而不是通过git
+#  cloud:
+#    config:
+#      client:
+#        native:
+#          searchLocations: classpath:/config   # 配置文件所在目录，classpath（类路径）和（系统文件路径） file两种
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tcaironglnan/spring-cloud-config
+          search-paths: respo
+          username:
+          password:
+      label: master
+
+server:
+  port: 8766
+
+eureka:
+  instance:
+      prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+
+logging:
+  level:
+    root: ERROR
+    org:
+      springframework:
+        web: ERROR
+      hibernate: ERROR
+      mybatis: ERROR
+  path: D:/temp/logs/config-server.log
+#  file: ./logs/config-client.log
