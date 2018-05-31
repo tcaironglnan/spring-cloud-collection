@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: service-feign
+
+server:
+  port: 8764
+
+feign:
+  hystrix:
+    enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+
+logging:
+  level:
+    root: ERROR
+    org:
+      springframework:
+        web: ERROR
+      hibernate: ERROR
+      mybatis: ERROR
+  path: D:/temp/logs/feign.log
+  file: ./logs/feign.log
