@@ -1,6 +1,11 @@
 # spring-cloud
 Spring-Cloud的简单Demo
 
+# 关于zipkin链路跟踪说明:
+    1.使用2.0.x版本会失败,具体原因还未找到
+    2.目前使用的是1.5.7版本来实现
+    3.zipkin服务端和客户端的版本都必须保持一致,否则也不会识别到数据
+
 # 子项目说明:
     #1. service-server-client是客户端,可以认为是子服务,用于提供服务.
     #2. service-server是服务端,可以认为是注册中心.
