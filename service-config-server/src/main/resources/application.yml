@@ -19,7 +19,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/tcaironglnan/spring-cloud-config
+          uri: https://github.com/start-face/spring-cloud-config
           search-paths: respo
           username:
           password:
